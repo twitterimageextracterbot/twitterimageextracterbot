@@ -22,8 +22,8 @@ def echo(update, context):
     c.Since = '2021-01-01'
     c.Store_object = True
     c.Pandas =True
-    twint.run.Search(c)
     nest_asyncio.apply()
+    twint.run.Search(c)
     try:
       for x in twint.storage.panda.Tweets_df["id"].index:
           print (twint.storage.panda.Tweets_df["thumbnail"][x])
