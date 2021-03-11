@@ -1,4 +1,5 @@
 twint
+--user --upgrade git+https://github.com/twintproject/twint.git@origin/master#egg=twint
 nest_asyncio
 python-telegram-bot
 datetime
